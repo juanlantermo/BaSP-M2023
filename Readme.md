@@ -12,3 +12,9 @@ It has a menu linked to different parts of the landing and in turn has others th
 3.![FormMegarocket](https://user-images.githubusercontent.com/70290650/228390109-ce24f90b-0cf4-4235-9170-1085dd255979.png)
 
 We developed a form so that user-client interaction exists and thus not only be a merely informative website
+
+# Megarocket web- Semana 3
+We start styling the page using some CSS properties.
+Following the design previously made in figma.
+
+Respecting colors, shapes and utilities.
