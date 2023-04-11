@@ -534,7 +534,7 @@ h1{
         box-sizing: border-box;
     }
 
-    #options h2 {
+    #activities h2 {
         text-align: left;
         align-self: center;
         font-size: 1.1em;
@@ -543,7 +543,7 @@ h1{
         margin: 5px 0;
     }
 
-    #options ul {
+    #activities ul {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -551,11 +551,11 @@ h1{
         margin: 0;
     }
 
-    #options ul li {
+    #activities ul li {
         width: 100%;
     }
 
-    #options ol {
+    #activities ol {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -563,7 +563,7 @@ h1{
         margin: 0 15px;
     }
 
-    #options ol li {
+    #activities ol li {
         width: 100%;
     }
 
