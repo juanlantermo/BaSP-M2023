@@ -86,12 +86,26 @@ aside a {
     text-decoration: none;
     font-size: 20px;
     color: #fff;
-    }
+}
 aside img {
     width: 50px;
     height: 50px;
     padding: 10px;
-    } 
+}
+.contact-box ul {
+    display: flex;
+    flex-direction: column;
+}
+.contact-box ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+} 
+.contact-box ul li span {
+    width: 180px;
+    align-content: center;
+} 
 #principal{
     text-align: center;
 }
@@ -282,13 +296,13 @@ h1{
 }
 #footer p{
     color: #000;
-    font-size: 30px;
-    float: left;
-    margin-top: 20px;
+    padding: 10px 5px;
 }
 .footer-img{
-    margin-right: 200px;
-    margin-bottom: 40px;
+    width: 30px;
+    height: 30px;
+    padding: 0 5px 5px 5px;
+    margin: 0 5px;
 }
 .footer-img a{
     float: right;
@@ -298,3 +312,278 @@ h1{
     width: 50px;
     height: 50px;
 }
+/*---------- MEDIA SECTION ---------*/
+@media screen and (min-width: 600px) {
+    #principal {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    #principal h1 {
+        padding: 15px;
+    }
+
+    #principal h2 {
+        padding: 10px 15px;
+    }
+
+    #principal p {
+        padding: 10px;
+        margin: 3px 10px;
+    }
+
+    #img-principal {
+        float: right;
+        align-self: flex-end;
+    }
+
+    #options {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: unset;
+    }
+    
+    .option1, .option2 {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: unset;
+        width: 50%;
+        height: 50%;
+    }
+
+    #options h2 {
+        height: 25px;
+        align-self: center;
+        padding: 8px 3px 5px 3px;
+        margin: 5px;
+    }
+
+    #options p {
+        display: block;
+    }
+
+    #options img {
+        padding: 5px;
+    }
+
+    .form-part-2 input, .form-part-2 select, .form-part-2 option, .form-part-1 textarea {
+        max-width: 600px;
+    }
+
+    #info p {
+        padding: 15px 30px;
+    }
+
+    #activities ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #activities ul li {
+        padding: 3px 0;
+        width: 430px;
+    }
+}
+@media screen and (min-width: 600px) {
+    #principal {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    #principal h1 {
+        padding: 15px;
+    }
+
+    #principal h2 {
+        padding: 10px 15px;
+    }
+
+    #principal p {
+        padding: 10px;
+        margin: 3px 10px;
+    }
+
+    #img-principal {
+        float: right;
+        align-self: flex-end;
+    }
+
+    #options {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: unset;
+    }
+    
+    .option1, .option2 {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: unset;
+        width: 50%;
+        height: 50%;
+    }
+
+    #options h2 {
+        height: 25px;
+        align-self: center;
+        padding: 8px 3px 5px 3px;
+        margin: 5px;
+    }
+
+    #options p {
+        display: block;
+    }
+
+    #options img {
+        padding: 5px;
+    }
+
+    .form-part-2 input, .form-part-2 select, .form-part-2 option, .form-part-1 textarea {
+        max-width: 600px;
+    }
+
+    #info p {
+        padding: 15px 30px;
+    }
+
+    #activities ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #activities ul li {
+        padding: 3px 0;
+        width: 430px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    body {
+        margin-left: 400px;
+    }
+
+    aside {
+        display: block;
+    }
+    
+    form {
+        flex-direction: row;
+    }
+
+    #logo {
+        width: 200px;
+        height: 40px;
+    }
+    .hamburguer {
+        width: 40px;
+        height: 40px;
+    }
+
+    .aside h2{
+        margin-top: 15px;
+    }
+
+    nav ul li {
+        border-radius: 0;
+    }
+
+    .contact-bar {
+        border-radius: 0;
+    }
+
+    .contact-box ul li {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5px;
+    }
+    
+    .contact-box ul li span {
+        width: 170px;
+        margin-right: 10px;
+    } 
+
+    #img-principal {
+        height: 180px;
+        width: 180px;
+    }
+
+    .form-part-2 {
+        width: 70%;
+        margin-bottom: 8px;
+    }
+
+    .form-part-1 {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    #options {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .activities-box {
+        width: 25%;
+        padding: 0 8px;
+        margin: 0 2px;
+        box-sizing: border-box;
+    }
+
+    #options h2 {
+        text-align: left;
+        align-self: center;
+        font-size: 1.1em;
+        height: 30px;
+        padding: 5px 0;
+        margin: 5px 0;
+    }
+
+    #options ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    #options ul li {
+        width: 100%;
+    }
+
+    #options ol {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0 15px;
+    }
+
+    #options ol li {
+        width: 100%;
+    }
+
+    footer {
+        text-align: initial;
+        overflow: hidden;
+    }
+
+    .footer p {
+        float: left;
+        margin: 20px 5px 20px 25px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .footer img {
+        float: right;
+        margin: 20px 10px;
+        width: 35px;
+        height: 35px;
+    }
+
+}    
