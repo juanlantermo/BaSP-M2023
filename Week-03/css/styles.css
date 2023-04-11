@@ -4,7 +4,8 @@
     border: 0%;
 }
 header {
-    height: 85px;
+    display: flex;
+    justify-content: space-between;
 }
 body{
     font-family: 'Roboto', Arial, serif;
@@ -22,18 +23,20 @@ body{
     color: #000;
 }
 #logo {
-    float: right;
-    width: 250px;
-    height: 50px;
-    padding: 10px;
-    margin-right: 250px;
+    width: 150px;
+    height: 30px;
+    margin: 10px;
 }
 aside {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
     color: #fff;
-    background-color: #E5F2ED;
+    background-color: #e5f2e2;
     text-align: center;
-    width: 320px;
-    margin-bottom: 10px;
+    width: 350px;
+    height: 100%;
 }
 #menu-title{
     padding-top: 10px;
@@ -43,15 +46,19 @@ aside {
 nav{
     padding-left:35px ;
 }
+nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 nav ul li {
     border: 1px #000 solid;
-    padding: 10px 3px;
-    margin: 8px 27px;
-    width: 180px;
-    list-style: none;
     background-color: #49a37b;
     text-align: center;
-    text-transform: uppercase;
+    width: 180px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 12px;
 }
 .contact-bar{
     border: 1px #000 solid;
@@ -66,56 +73,46 @@ nav ul li {
     padding-top: 15px;
 }   
 .contact-bar ol{
-    float: right;
-    width: 200px;
-    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
 .contact-bar li{
-    margin-bottom: 60px;
-    margin-top: 40px;
-    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
 }      
 aside a {
     text-decoration: none;
+    font-size: 20px;
     color: #fff;
     }
 aside img {
-    float: left;
-    width: 70px;
-    height: 70px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 35px;
-    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
     } 
 #principal{
-    padding-top: 20px;
+    text-align: center;
 }
 #text-principal{
     overflow: hidden;
     height: 300px;
 }
 h1{
-    font-size: 40px;
-    margin: 8px 20px;
-    padding: 8px 20px;
+    font-size: 35px;
+    padding: 10px;
+    margin: 0;
     font-family: 'Mulish', Arial, serif;
     font-weight: bold;
     text-transform: uppercase;
 }
 #principal h2{
-    font-size: 50x;
-    display: inline-block;
-    margin-left: 20px;
-    padding: 8px 20px;
-    width: 700px;
-    font-weight: bold;
+    font-size: 27px;
 }
 #text-principal p{
-    margin: 12px 20px;
-    padding: 12px 20px;
-    letter-spacing: 2px;
-    line-height: 35px;
+    padding: 10px;
+    margin: 10px;
 }
 #principal p{
     float: left;
@@ -125,191 +122,7 @@ h1{
     box-sizing: border-box;
 }
 #img-principal {
-    float: right;
-    height: 200px;
-    width: 200px;
-    margin-right: 250px;
-    box-sizing: border-box;
+    width: 150px;
+    height: 150px;
 }
 
-#options{
-    overflow: hidden;
-    height: 600px;
-    background-color:#AACE9B;
-}
-#options h2{
-    padding: 8px;
-    margin-left: 100px;
-    margin-right: 250px;
-    text-align: center;
-    border: 1px #000 solid;
-    border-radius: 8px;
-    background-color: #88a47c;
-    font-size: 50px;
-}
-#options img {
-    float: left;
-    width: 75px;
-    height: 75px;
-    margin-top: 5px;
-    margin-left: 10px;
-}
-#options p {
-    font-size: 24px;
-    margin: 10px;
-    margin-left: 50px;
-    margin-right: 110px;
-    padding: 10px;
-    padding-left: 40px;
-    padding-right: 100px;
-}
-.option1{
-    float: left;
-    width: 50%;
-    padding: 40px;
-    height: 270px;
-    box-sizing: border-box;
-}
-.option2{
-    float: right;
-    width: 50%;
-    padding: 40px;
-    height: 270px;
-    box-sizing: border-box;
-}
-#form {
-    overflow: hidden;
-    padding-top: 20px;
-    padding-left: 30px;
-}
-#form h2{
-    text-align: center;
-    font-size: 50px;
-    letter-spacing: 3px;
-}
-.form-part-2 input, .form-part-1 select{
-    padding: 10px;
-    margin: 20px;
-    float: left;
-    width: 50%;
-    box-sizing: border-box;
-} 
-.form-part-1 {
-    float: right;
-    width: 40%;
-    padding: 5px;
-    margin: 5px;
-    box-sizing: border-box;
-}
-.form-part-1 textarea {
-    width: 500px;
-    height: 250px;
-    margin: 8px;
-}
-#form textarea::placeholder{
-    font-size: 17px;
-}
-.form-part-1 button {
-    font-size: 20px;
-    padding: 3px;
-    margin: 0 50px;
-    width: 160px;
-    height: 40px;
-    background-color: #49a37b;
-    border-radius: 10px;
-}
-.form-part-1 button img {
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-}
-.motive{
-    margin-left: 20px;
-    padding: 10px;
-    margin-top: 15px;
-}
-#info{
-    overflow: hidden;
-    background-color: #AACE9B ;
-    color: #f0f0f0;
-    padding: 20px;
-    padding-top:15px ;
-}
-#info h2{
-    font-size: 50px;
-    padding: 10px;
-    margin-top: 10px;
-}
-#info p {
-    font-size: 26px;
-    text-align: justify;
-}
-#activities{
-    background-color: #D9D9D9;
-    display: inline-block;
-    width: 100%;
-    padding-left:30px;
-}
-#activities h2{
-    font-size: 20px;
-    border: 1px #000 solid;
-    width: fit-content;
-    margin-bottom:5px ;
-}
-#activities-1{
-    float: left;
-    width: 25%;
-}
-#activities-2{
-    float: left;
-    width: 25%;
-    margin-top: 15px;
-}
-#activities-3{
-    float: left;
-    width: 25%;
-}
-#activities-4{
-    float: left;
-    width: 25%;
-}
-#activities ol{
-    margin-left: 20px;
-}
-#activities ol li{
-    list-style:decimal;
-    margin-bottom: 5px;
-}
-#activities ul li{
-    margin-left: 20px;
-    margin-bottom: 5px;
-}
-.activities-box {
-    float: left;
-    width: 25%;
-    padding: 15px;
-    box-sizing: border-box;
-}
-#footer{
-    padding: 60px;
-    width: 100%;
-    background-color: #AACE9B;
-}
-#footer p{
-    color: #000;
-    font-size: 30px;
-    float: left;
-    margin-top: 20px;
-}
-.footer-img{
-    margin-right: 200px;
-    margin-bottom: 40px;
-}
-.footer-img a{
-    float: right;
-    padding: 10px;
-}
-.footer-img a img{ 
-    width: 50px;
-    height: 50px;
-}
