@@ -269,197 +269,172 @@ h1, .menu-title, .aside a, .info h2 {
 }
 /*---------- MEDIA SECTION ---------*/
 @media screen and (min-width: 600px) {
-    .main {
-        display: flex;
-        justify-content: space-between;
-        text-align: left;
-    }
+.main {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
 
-    .main h1 {
-        padding: 15px;
-    }
+.main h1 {
+    padding: 15px;
+}
 
-    .main h2 {
-        padding: 10px 15px;
-    }
+.main h2 {
+    padding: 10px 15px;
+}
 
-    .main p {
-        padding: 10px;
-        margin: 3px 10px;
-    }
+.main p {
+    padding: 10px;
+    margin: 3px 10px;
+}
 
-    .img-principal {
-        float: right;
-        align-self: flex-end;
-    }
+.img-principal {
+    float: right;
+    align-self: flex-end;
+}
 
-    .options {
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: unset;
-    }
-    
-    .option1, .option2 {
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-        align-items: unset;
-        width: 50%;
-        height: 50%;
-    }
-
-    .options h2 {
-        height: 25px;
-        align-self: center;
-        padding: 8px 3px 5px 3px;
-        margin: 5px;
-    }
-
-    .options p {
-        display: block;
-    }
-
-    .options img {
-        padding: 5px;
-    }
-
-    .form-part-1 input, .form-part-1 select, .form-part-1 option, .form textarea {
-        max-width: 600px;
-    }
-
-    .info p {
-        padding: 15px 30px;
-    }
-
-    .activities ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .activities ul li {
-        padding: 3px 0;
-        width: 430px;
-    }
+.options {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: unset;
+}   
+.option1, .option2 {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: unset;
+    width: 50%;
+    height: 50%;
+}
+.options h2 {
+    height: 25px;
+    align-self: center;
+    padding: 8px 3px 5px 3px;
+    margin: 5px;
+}
+.options p {
+    display: block;
+}
+.options img {
+    padding: 5px;
+}
+.form-part-1 input, .form-part-1 select, .form-part-1 option, .form textarea {
+    max-width: 600px;
+}
+.info p {
+    padding: 15px 30px;
+}
+.activities ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.activities ul li {
+    padding: 3px 0;
+    width: 430px;
+}
 }
 @media screen and (min-width: 1024px) {
-    body {
-        margin-left: 400px;
+body {
+    margin-left: 400px;
+}
+aside {
+    display: block;
+}    
+form {
+    flex-direction: row;
+}
+.logo {
+    width: 200px;
+    height: 40px;
+}
+.aside h2{
+    margin-top: 15px;
+}
+.aside nav ul li {
+    border-radius: 0;
+}
+.contact-bar {
+    border-radius: 0;
     }
+.contact-box ul li {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+}
 
-    aside {
-        display: block;
-    }
-    
-    form {
-        flex-direction: row;
-    }
+.contact-box ul li span {
+    width: 170px;
+    margin-right: 10px;
+} 
 
-    .logo {
-        width: 200px;
-        height: 40px;
-    }
-    .aside h2{
-        margin-top: 15px;
-    }
+.img-principal {
+    height: 180px;
+    width: 180px;
+}
+.form-part-1 {
+    width: 70%;
+    margin-bottom: 8px;
+}
 
-    .aside nav ul li {
-        border-radius: 0;
-    }
+.form-part-2 {
+    width: 100%;
+    margin-bottom: 8px;
+}
 
-    .contact-bar {
-        border-radius: 0;
+.activities {
+    display: flex;
+    justify-content: space-between;
+}
+.activities-box {
+    width: 25%;
+    padding: 0 8px;
+    margin: 0 2px;
+    box-sizing: border-box;
+}
+.activities h2 {
+    text-align: left;
+    align-self: center;
+    font-size: 1.1em;
+    height: 30px;
+    padding: 5px 0;
+    margin: 5px 0;
+}
+.activities ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+.activities ul li {
+    width: 100%;
+}
+.activities ol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0 15px;
+}
+.activities ol li {
+    width: 100%;
+}
+footer {
+    text-align: initial;
+    overflow: hidden;
+}
+.footer p {
+    float: left;
+    margin: 20px 5px 20px 25px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.footer img {
+    float: right;
+    margin: 20px 10px;
+    width: 35px;
+    height: 35px;
     }
-
-    .contact-box ul li {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        margin: 5px;
-    }
-    
-    .contact-box ul li span {
-        width: 170px;
-        margin-right: 10px;
-    } 
-
-    .img-principal {
-        height: 180px;
-        width: 180px;
-    }
-
-    .form-part-1 {
-        width: 70%;
-        margin-bottom: 8px;
-    }
-
-    .form-part-2 {
-        width: 100%;
-        margin-bottom: 8px;
-    }
-
-    .activities {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .activities-box {
-        width: 25%;
-        padding: 0 8px;
-        margin: 0 2px;
-        box-sizing: border-box;
-    }
-
-    .activities h2 {
-        text-align: left;
-        align-self: center;
-        font-size: 1.1em;
-        height: 30px;
-        padding: 5px 0;
-        margin: 5px 0;
-    }
-
-    .activities ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-        margin: 0;
-    }
-
-    .activities ul li {
-        width: 100%;
-    }
-
-    .activities ol {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-        margin: 0 15px;
-    }
-
-    .activities ol li {
-        width: 100%;
-    }
-
-    footer {
-        text-align: initial;
-        overflow: hidden;
-    }
-
-    .footer p {
-        float: left;
-        margin: 20px 5px 20px 25px;
-        font-size: 15px;
-        font-weight: bold;
-    }
-
-    .footer img {
-        float: right;
-        margin: 20px 10px;
-        width: 35px;
-        height: 35px;
-    }
-
 }    
