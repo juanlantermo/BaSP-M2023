@@ -3,29 +3,12 @@
     padding: 0%;
     border: 0%;
 }
+body {
+    font-family: 'Roboto', Arial, serif;
+}
 header {
     display: flex;
     justify-content: space-between;
-}
-body{
-    font-family: 'Roboto', Arial, serif;
-}
-.section-background-blue {
-    background-color: #373867;
-    color: #f0f0f0;
-}
-.section-background-green {
-    background-color: #52c27f;
-    color: #f0f0f0;
-}
-.section-background-grey {
-    background-color: #d9d9d9;
-    color: #000;
-}
-#logo {
-    width: 150px;
-    height: 30px;
-    margin: 10px;
 }
 aside {
     display: none;
@@ -35,23 +18,45 @@ aside {
     color: #fff;
     background-color: #e5f2e2;
     text-align: center;
-    width: 350px;
+    width: 400px;
     height: 100%;
 }
-#menu-title{
-    padding-top: 10px;
-    color: #000;
-    font-size: 32px;
-}    
-nav{
-    padding-left:35px ;
+form {
+    display: flex;
+    flex-direction: column;
 }
-nav ul{
+footer {
+    text-align: center;
+}
+.section-background-blue {
+    background-color: #373867;
+    color: white;
+} 
+.section-background-grey {
+    background-color: #d9d9d9;
+    color: black;
+} 
+.section-background-green {
+    background-color: #aace9b;
+    color: white;
+}
+h1, .menu-title, .aside a, .info h2 {
+    text-transform: uppercase;
+}
+.main h1, .main h2, .form h2, .history h2, .members h2 {
+    font-weight: bold;
+}
+.logo {
+    width: 150px;
+    height: 30px;
+    margin: 10px;
+}
+.aside nav ul {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-nav ul li {
+.aside nav ul li {
     border: 1px #000 solid;
     background-color: #49a37b;
     text-align: center;
@@ -60,34 +65,31 @@ nav ul li {
     margin: 10px;
     border-radius: 12px;
 }
-.contact-bar{
-    border: 1px #000 solid;
-    overflow: hidden;
-    height: 300px;
-    background-color: #49a37b;
-    padding-bottom: 10px;
-}
-.contact-bar > h2{
-    font-size: 32px;
-    text-transform: uppercase;
-    padding-top: 15px;
-}   
-.contact-bar ol{
-    display: flex;
-    flex-direction: column;
-}
-.contact-bar li{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5px;
-}      
-aside a {
+.aside a {
     text-decoration: none;
     font-size: 20px;
     color: #fff;
 }
-aside img {
+.aside nav ul li a:hover{
+    color: #373867;
+    margin-left: 3px;
+    transition: 0.4s;
+}
+.contact-bar h2 {
+    font-size: 20px;
+    padding: 5px 5px 10px 5px;
+    margin: 5px;
+}
+
+.contact-bar {
+    border: 1px #000 solid;
+    border-radius: 12px;
+    height: 320px;
+    background-color: #49a37b;
+    padding: 20px;
+    margin: 20px;
+}
+.aside img {
     width: 50px;
     height: 50px;
     padding: 10px;
@@ -96,58 +98,55 @@ aside img {
     display: flex;
     flex-direction: column;
 }
+
 .contact-box ul li {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 5px;
-} 
-.contact-box ul li span {
-    width: 180px;
-    align-content: center;
-} 
-#principal{
+}
+.main {
     text-align: center;
 }
-#text-principal{
-    overflow: hidden;
-    height: 300px;
-}
-h1{
-    font-size: 35px;
-    padding: 10px;
-    margin: 0;
-    font-family: 'Mulish', Arial, serif;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-#principal h2{
-    font-size: 27px;
-}
-#text-principal p{
+
+.main p {
     padding: 10px;
     margin: 10px;
 }
-#principal p{
-    float: left;
-    width: 90%;
-    margin: 5px 20px;
-    padding: 5px 20px;
-    box-sizing: border-box;
+
+.main h2 {
+    font-size: 27px;  
 }
-#img-principal {
+
+.main h1 {
+    font-size: 35px;
+    padding: 10px;
+    margin: 0;
+}
+
+.img-principal{
     width: 150px;
     height: 150px;
 }
-
-#options{
+.options {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     height: 670px;
 }
-#options h2{
+.option1, .option2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.options img {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+.options h2 {
     text-align: center;
     align-self: center;
     border: 1px #000 solid;
@@ -157,13 +156,7 @@ h1{
     background-color: #88a47c;
     width: 180px;
 }
-#options img {
-    width: 70px;
-    height: 70px;
-    margin-right: 10px;
-    margin-top: 20px;
-}
-#options p {
+.options p {
     display: none;
     padding: 5px 10px 5px 0px;
     margin: 0 10px 10px 0;
@@ -173,43 +166,29 @@ h1{
     line-height: 1.2em;
     font-size: 1.1em;
 }
-.option1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.option2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-#form {
-    display: flex;
-    flex-direction: column;
-}
-#form h2{
+.form h2 {
     text-align: center;
     font-size: 2em;
     padding: 5px;
     letter-spacing: 3px;
 }
-.form-part-1 {
+.form-1 {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
-.form-part-2{
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-}
-.form-part-2 input, .form-part-2 select, .form-part-2 option{
+.form-1 input, .form-1 select, .form-1 option {
     padding: 5px;
     margin: 10px;
     height: 20%;
     width: 70%;
     box-sizing: border-box;
-} 
-.form-part-1 textarea {
+}
+.form-2 {
+    display: flex;
+    flex-direction: column;
+}
+.form-2 textarea {
     padding: 5px;
     margin: 10px;
     height: 160px;
@@ -217,10 +196,12 @@ h1{
     box-sizing: border-box;
     align-self: center;
 }
-#form textarea::placeholder{
-    font-size: 17px;
+.block-buttons {
+    display: flex;
+    align-self: auto;
+    justify-content: space-around;
 }
-.form-part-1 button {
+.block-buttons button {
     display: flex;
     justify-content: space-around;
     font-size: 20px;
@@ -230,115 +211,89 @@ h1{
     border-radius: 12px;
     border: #000 2px solid;
 }
-.form-part-1 button img {
+.form-2 button img {
     width: 20px;
     height: 20px;
 }
-.block-buttons{
-    display: flex;
-    align-self: auto;
-    justify-content: space-around;
-}
-.motive{
-    margin-left: 20px;
-    padding: 10px;
-    margin-top: 15px;
-}
-#info{
+.info {
     text-align: center;
 }
-#info h2{
+.info h2{
     font-size: 2em;
     padding: 15px 0 0 0;
     margin: 0;
-}
-#info p {
+}  
+.info p {
     padding: 15px;
     font-size: 1.3em;
     text-align: justify;
 }
-#activities h2{
+.activities h2 {
     text-align: center;
     font-size: 1.3em;
     padding: 8px 5px 8px 5px;
 }
-#activities ol{
+.activities ol {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-#activities ul{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-#activities ol li{
+.activities ol li {
     list-style-type: decimal;
     padding: 3px 0;
     width: 100px;
 }
-#activities ul{
+.activities ul {
     margin: 0 15px;
     padding: 4px 25px;
 }
-#activities ul li{
-    margin-left: 20px;
-    margin-bottom: 5px;
-}
-.activities-box {
+.activities-box ul li {
     list-style-type: circle;
     padding: 3px 0;
 }
-#footer{
-    padding: 60px;
-    width: 100%;
-    background-color: #AACE9B;
+.activitie-1 h2 {
+    font-size: 1.8em;
 }
-#footer p{
+.activitie-1 li {
+    font-size: 1.1em;
+}
+.footer p {
     color: #000;
     padding: 10px 5px;
-}
-.footer-img{
+} 
+.footer img {
     width: 30px;
     height: 30px;
     padding: 0 5px 5px 5px;
     margin: 0 5px;
 }
-.footer-img a{
-    float: right;
-    padding: 10px;
-}
-.footer-img a img{ 
-    width: 50px;
-    height: 50px;
-}
 /*---------- MEDIA SECTION ---------*/
 @media screen and (min-width: 600px) {
-    #principal {
+    .main {
         display: flex;
         justify-content: space-between;
         text-align: left;
     }
 
-    #principal h1 {
+    .main h1 {
         padding: 15px;
     }
 
-    #principal h2 {
+    .main h2 {
         padding: 10px 15px;
     }
 
-    #principal p {
+    .main p {
         padding: 10px;
         margin: 3px 10px;
     }
 
-    #img-principal {
+    .img-principal {
         float: right;
         align-self: flex-end;
     }
 
-    #options {
+    .options {
         flex-direction: row;
         flex-wrap: wrap;
         align-items: unset;
@@ -353,110 +308,36 @@ h1{
         height: 50%;
     }
 
-    #options h2 {
+    .options h2 {
         height: 25px;
         align-self: center;
         padding: 8px 3px 5px 3px;
         margin: 5px;
     }
 
-    #options p {
+    .options p {
         display: block;
     }
 
-    #options img {
+    .options img {
         padding: 5px;
     }
 
-    .form-part-2 input, .form-part-2 select, .form-part-2 option, .form-part-1 textarea {
+    .form-part-1 input, .form-part-1 select, .form-part-1 option, .form textarea {
         max-width: 600px;
     }
 
-    #info p {
+    .info p {
         padding: 15px 30px;
     }
 
-    #activities ul {
+    .activities ul {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    #activities ul li {
-        padding: 3px 0;
-        width: 430px;
-    }
-}
-@media screen and (min-width: 600px) {
-    #principal {
-        display: flex;
-        justify-content: space-between;
-        text-align: left;
-    }
-
-    #principal h1 {
-        padding: 15px;
-    }
-
-    #principal h2 {
-        padding: 10px 15px;
-    }
-
-    #principal p {
-        padding: 10px;
-        margin: 3px 10px;
-    }
-
-    #img-principal {
-        float: right;
-        align-self: flex-end;
-    }
-
-    #options {
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: unset;
-    }
-    
-    .option1, .option2 {
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-        align-items: unset;
-        width: 50%;
-        height: 50%;
-    }
-
-    #options h2 {
-        height: 25px;
-        align-self: center;
-        padding: 8px 3px 5px 3px;
-        margin: 5px;
-    }
-
-    #options p {
-        display: block;
-    }
-
-    #options img {
-        padding: 5px;
-    }
-
-    .form-part-2 input, .form-part-2 select, .form-part-2 option, .form-part-1 textarea {
-        max-width: 600px;
-    }
-
-    #info p {
-        padding: 15px 30px;
-    }
-
-    #activities ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #activities ul li {
+    .activities ul li {
         padding: 3px 0;
         width: 430px;
     }
@@ -474,20 +355,15 @@ h1{
         flex-direction: row;
     }
 
-    #logo {
+    .logo {
         width: 200px;
         height: 40px;
     }
-    .hamburguer {
-        width: 40px;
-        height: 40px;
-    }
-
     .aside h2{
         margin-top: 15px;
     }
 
-    nav ul li {
+    .aside nav ul li {
         border-radius: 0;
     }
 
@@ -507,22 +383,22 @@ h1{
         margin-right: 10px;
     } 
 
-    #img-principal {
+    .img-principal {
         height: 180px;
         width: 180px;
     }
 
-    .form-part-2 {
+    .form-part-1 {
         width: 70%;
         margin-bottom: 8px;
     }
 
-    .form-part-1 {
+    .form-part-2 {
         width: 100%;
         margin-bottom: 8px;
     }
 
-    #options {
+    .activities {
         display: flex;
         justify-content: space-between;
     }
@@ -534,7 +410,7 @@ h1{
         box-sizing: border-box;
     }
 
-    #activities h2 {
+    .activities h2 {
         text-align: left;
         align-self: center;
         font-size: 1.1em;
@@ -543,7 +419,7 @@ h1{
         margin: 5px 0;
     }
 
-    #activities ul {
+    .activities ul {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -551,11 +427,11 @@ h1{
         margin: 0;
     }
 
-    #activities ul li {
+    .activities ul li {
         width: 100%;
     }
 
-    #activities ol {
+    .activities ol {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -563,7 +439,7 @@ h1{
         margin: 0 15px;
     }
 
-    #activities ol li {
+    .activities ol li {
         width: 100%;
     }
 
