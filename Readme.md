@@ -1,4 +1,4 @@
-# Megarocket web- Semana 2
+# Megarocket web- week 2
 This is the megarocket gym page. It is made only with HTML5 and can be opened with any browser. It is only armed with labels and content so that after being checked it can add styles and functionalities at the time.
 
 
@@ -13,8 +13,12 @@ It has a menu linked to different parts of the landing and in turn has others th
 
 We developed a form so that user-client interaction exists and thus not only be a merely informative website
 
-# Megarocket web- Semana 3
+# Megarocket web- week 3
 We start styling the page using some CSS properties.
 Following the design previously made in figma.
 
 Respecting colors, shapes and utilities.
+# Megarocket web- week 4
+This week we use flexbox tools to style the gym website.
+To see it online you must enter the following link:
+https://juanlantermo.github.io/BaSP-M2023/Week-04/index.html
