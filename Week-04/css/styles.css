@@ -3,12 +3,16 @@
     padding: 0%;
     border: 0%;
 }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
 body {
     font-family: 'Roboto', Arial, serif;
 }
 header {
     display: flex;
     justify-content: space-between;
+    padding: 2px;
 }
 aside {
     display: none;
@@ -45,6 +49,9 @@ h1, .menu-title, .aside a, .info h2 {
 }
 .main h1, .main h2, .form h2, .history h2, .members h2 {
     font-weight: bold;
+}
+.menu-title{
+    color: #000;
 }
 .logo {
     width: 150px;
@@ -105,25 +112,25 @@ h1, .menu-title, .aside a, .info h2 {
     align-items: center;
     padding: 5px;
 }
+.contact-box ul li span {
+    width: 180px;
+    align-content: center;
+}
 .main {
     text-align: center;
 }
-
 .main p {
     padding: 10px;
     margin: 10px;
 }
-
 .main h2 {
     font-size: 27px;  
 }
-
 .main h1 {
     font-size: 35px;
     padding: 10px;
     margin: 0;
 }
-
 .img-principal{
     width: 150px;
     height: 150px;
@@ -172,23 +179,23 @@ h1, .menu-title, .aside a, .info h2 {
     padding: 5px;
     letter-spacing: 3px;
 }
-.form-1 {
+.form-part-1 {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.form-1 input, .form-1 select, .form-1 option {
+.form-part-1 input, .form-part-1 select, .form-part-1 option {
     padding: 5px;
     margin: 10px;
     height: 20%;
     width: 70%;
     box-sizing: border-box;
 }
-.form-2 {
+.form-part-2 {
     display: flex;
     flex-direction: column;
 }
-.form-2 textarea {
+.form-part-2 textarea {
     padding: 5px;
     margin: 10px;
     height: 160px;
@@ -196,12 +203,12 @@ h1, .menu-title, .aside a, .info h2 {
     box-sizing: border-box;
     align-self: center;
 }
-.block-buttons {
+.box-buttons {
     display: flex;
     align-self: auto;
     justify-content: space-around;
 }
-.block-buttons button {
+.box-buttons button {
     display: flex;
     justify-content: space-around;
     font-size: 20px;
@@ -211,7 +218,7 @@ h1, .menu-title, .aside a, .info h2 {
     border-radius: 12px;
     border: #000 2px solid;
 }
-.form-2 button img {
+.form-part-2 button img {
     width: 20px;
     height: 20px;
 }
@@ -363,12 +370,16 @@ form {
     align-items: center;
     margin: 5px;
 }
-
 .contact-box ul li span {
     width: 170px;
     margin-right: 10px;
+}
+.menu-button {
+    width: 40px;
+    height: 40px;
+    color: #d9d9d9;
+    margin-left: 5px;
 } 
-
 .img-principal {
     height: 180px;
     width: 180px;
@@ -382,7 +393,6 @@ form {
     width: 100%;
     margin-bottom: 8px;
 }
-
 .activities {
     display: flex;
     justify-content: space-between;
