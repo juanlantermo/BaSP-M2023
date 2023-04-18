@@ -18,6 +18,7 @@ We start styling the page using some CSS properties.
 Following the design previously made in figma.
 
 Respecting colors, shapes and utilities.
+
 # Megarocket web- week 4
 This week we use flexbox tools to style the gym website.
 To see it online you must enter the following link:
