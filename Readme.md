@@ -23,3 +23,7 @@ Respecting colors, shapes and utilities.
 This week we use flexbox tools to style the gym website.
 To see it online you must enter the following link:
 https://juanlantermo.github.io/BaSP-M2023/Week-04/index.html
+
+# Megarocket web- week 4
+This week we did javascript exercises ranging from handling simple variables, using iterators to programming functions.
+https://juanlantermo.github.io/BaSP-M2023/Week-05/index.html
