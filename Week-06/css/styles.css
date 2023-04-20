@@ -1,0 +1,450 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    border: 0%;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    font-family: 'Roboto', Arial, serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+}
+aside {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: #fff;
+    background-color: #e5f2e2;
+    text-align: center;
+    width: 400px;
+    height: 100%;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+footer {
+    text-align: center;
+}
+.section-background-blue {
+    background-color: #373867;
+    color: white;
+} 
+.section-background-grey {
+    background-color: #d9d9d9;
+    color: black;
+} 
+.section-background-green {
+    background-color: #aace9b;
+    color: white;
+}
+h1, .menu-title, .aside a, .info h2 {
+    text-transform: uppercase;
+}
+.main h1, .main h2, .form h2, .history h2, .members h2 {
+    font-weight: bold;
+}
+.menu-title{
+    color: #000;
+}
+.logo {
+    width: 150px;
+    height: 30px;
+    margin: 10px;
+}
+.aside nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.aside nav ul li {
+    border: 1px #000 solid;
+    background-color: #49a37b;
+    text-align: center;
+    width: 180px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 12px;
+}
+.aside a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+}
+.aside nav ul li a:hover{
+    color: #373867;
+    margin-left: 3px;
+    transition: 0.4s;
+}
+.contact-bar h2 {
+    font-size: 20px;
+    padding: 5px 5px 10px 5px;
+    margin: 5px;
+}
+
+.contact-bar {
+    border: 1px #000 solid;
+    border-radius: 12px;
+    height: 320px;
+    background-color: #49a37b;
+    padding: 20px;
+    margin: 20px;
+}
+.aside img {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+.contact-box ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-box ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+.contact-box ul li span {
+    width: 180px;
+    align-content: center;
+}
+.main {
+    text-align: center;
+}
+.main p {
+    padding: 10px;
+    margin: 10px;
+}
+.main h2 {
+    font-size: 27px;  
+}
+.main h1 {
+    font-size: 35px;
+    padding: 10px;
+    margin: 0;
+}
+.img-principal{
+    width: 150px;
+    height: 150px;
+}
+.options {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 670px;
+}
+.option1, .option2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.options img {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+.options h2 {
+    text-align: center;
+    align-self: center;
+    border: 1px #000 solid;
+    padding: 8px 20px;
+    margin: 5px 0;
+    border-radius: 4px;
+    background-color: #88a47c;
+    width: 180px;
+}
+.options p {
+    display: none;
+    padding: 5px 10px 5px 0px;
+    margin: 0 10px 10px 0;
+    margin-left: 30%;
+    width: 308px;
+    height: 140px;
+    line-height: 1.2em;
+    font-size: 1.1em;
+}
+.form h2 {
+    text-align: center;
+    font-size: 2em;
+    padding: 5px;
+    letter-spacing: 3px;
+}
+.form-part-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-part-1 input, .form-part-1 select, .form-part-1 option {
+    padding: 5px;
+    margin: 10px;
+    height: 20%;
+    width: 70%;
+    box-sizing: border-box;
+}
+.form-part-2 {
+    display: flex;
+    flex-direction: column;
+}
+.form-part-2 textarea {
+    padding: 5px;
+    margin: 10px;
+    height: 160px;
+    width: 70%;
+    box-sizing: border-box;
+    align-self: center;
+}
+.box-buttons {
+    display: flex;
+    align-self: auto;
+    justify-content: space-around;
+}
+.box-buttons button {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: #49a37b;
+    border-radius: 12px;
+    border: #000 2px solid;
+}
+.form-part-2 button img {
+    width: 20px;
+    height: 20px;
+}
+.info {
+    text-align: center;
+}
+.info h2{
+    font-size: 2em;
+    padding: 15px 0 0 0;
+    margin: 0;
+}  
+.info p {
+    padding: 15px;
+    font-size: 1.3em;
+    text-align: justify;
+}
+.activities h2 {
+    text-align: center;
+    font-size: 1.3em;
+    padding: 8px 5px 8px 5px;
+}
+.activities ol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.activities ol li {
+    list-style-type: decimal;
+    padding: 3px 0;
+    width: 100px;
+}
+.activities ul {
+    margin: 0 15px;
+    padding: 4px 25px;
+}
+.activities-box ul li {
+    list-style-type: circle;
+    padding: 3px 0;
+}
+.activitie-1 h2 {
+    font-size: 1.8em;
+}
+.activitie-1 li {
+    font-size: 1.1em;
+}
+.footer p {
+    color: #000;
+    padding: 10px 5px;
+} 
+.footer img {
+    width: 30px;
+    height: 30px;
+    padding: 0 5px 5px 5px;
+    margin: 0 5px;
+}
+/*---------- MEDIA SECTION ---------*/
+@media screen and (min-width: 600px) {
+.main {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.main h1 {
+    padding: 15px;
+}
+
+.main h2 {
+    padding: 10px 15px;
+}
+
+.main p {
+    padding: 10px;
+    margin: 3px 10px;
+}
+
+.img-principal {
+    float: right;
+    align-self: flex-end;
+}
+
+.options {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: unset;
+}   
+.option1, .option2 {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: unset;
+    width: 50%;
+    height: 50%;
+}
+.options h2 {
+    height: 25px;
+    align-self: center;
+    padding: 8px 3px 5px 3px;
+    margin: 5px;
+}
+.options p {
+    display: block;
+}
+.options img {
+    padding: 5px;
+}
+.form-part-1 input, .form-part-1 select, .form-part-1 option, .form textarea {
+    max-width: 600px;
+}
+.info p {
+    padding: 15px 30px;
+}
+.activities ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.activities ul li {
+    padding: 3px 0;
+    width: 430px;
+}
+}
+@media screen and (min-width: 1024px) {
+body {
+    margin-left: 400px;
+}
+aside {
+    display: block;
+}    
+form {
+    flex-direction: row;
+}
+.logo {
+    width: 200px;
+    height: 40px;
+}
+.aside h2{
+    margin-top: 15px;
+}
+.aside nav ul li {
+    border-radius: 0;
+}
+.contact-bar {
+    border-radius: 0;
+    }
+.contact-box ul li {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+}
+.contact-box ul li span {
+    width: 170px;
+    margin-right: 10px;
+}
+.menu-button {
+    width: 40px;
+    height: 40px;
+    color: #d9d9d9;
+    margin-left: 5px;
+} 
+.img-principal {
+    height: 180px;
+    width: 180px;
+}
+.form-part-1 {
+    width: 70%;
+    margin-bottom: 8px;
+}
+
+.form-part-2 {
+    width: 100%;
+    margin-bottom: 8px;
+}
+.activities {
+    display: flex;
+    justify-content: space-between;
+}
+.activities-box {
+    width: 25%;
+    padding: 0 8px;
+    margin: 0 2px;
+    box-sizing: border-box;
+}
+.activities h2 {
+    text-align: left;
+    align-self: center;
+    font-size: 1.1em;
+    height: 30px;
+    padding: 5px 0;
+    margin: 5px 0;
+}
+.activities ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+.activities ul li {
+    width: 100%;
+}
+.activities ol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0 15px;
+}
+.activities ol li {
+    width: 100%;
+}
+footer {
+    text-align: initial;
+    overflow: hidden;
+}
+.footer p {
+    float: left;
+    margin: 20px 5px 20px 25px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.footer img {
+    float: right;
+    margin: 20px 10px;
+    width: 35px;
+    height: 35px;
+    }
+}    
