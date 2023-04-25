@@ -12,9 +12,9 @@ function hasInteger(string) {
 }
 
 var firstName = document.getElementById('name');
-firstName.addEventListener('keyup', isName);
+firstName.addEventListener('keyup', theName);
 var savedName;
-function isName(e) {
+function theName(e) {
     var text = e.target.value;
     if (!hasInteger(text) && text.length > 3) {
         savedName = text;
@@ -41,9 +41,9 @@ function isName(e) {
 }
 
 var lastName = document.getElementById('last-name');
-lastName.addEventListener('keyup', isLastName);
+lastName.addEventListener('keyup', theLastName);
 var savedLastName;
-function isLastName(e) {
+function theLastName(e) {
     var text = e.target.value;
     if (!hasInteger(text) && text.length > 3) {
         savedLastName= text;
@@ -70,9 +70,9 @@ function isLastName(e) {
 }
 
 var email = document.getElementById('email');
-email.addEventListener('keyup', isEmail);
+email.addEventListener('keyup', theEmail);
 var savedEmail;
-function isEmail(e) {
+function theEmail(e) {
     var text = e.target.value;
     var emailExpression = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
     var result = emailExpression.test(text);
@@ -106,9 +106,9 @@ dateOn.setAttribute('max', '2005-12-31');
 savedDate=dateOn;
 
 var dni = document.getElementById('dni');
-dni.addEventListener('keyup', isDNI);
+dni.addEventListener('keyup', theDNI);
 var savedDni ;
-function isDNI(e) {
+function theDNI(e) {
     var text = e.target.value;
     if (text.indexOf(' ') == -1 && text.toUpperCase() == text.toLowerCase() && text.length >= 7) {
         savedDni=text;
@@ -135,9 +135,9 @@ function isDNI(e) {
 }
 
 var phone = document.getElementById('phone');
-phone.addEventListener('keyup', isPhone);
+phone.addEventListener('keyup', thePhone);
 var savedPhone;
-function isPhone(e) {
+function thePhone(e) {
     var text = e.target.value;
     if (text.indexOf(' ') == -1 && text.toUpperCase() == text.toLowerCase() && text.length >= 7) {
         savedPhone = text;
@@ -164,10 +164,10 @@ function isPhone(e) {
 }
 
 var address = document.getElementById('address');
-address.addEventListener('keyup', isAddress);
+address.addEventListener('keyup', theAddress);
 var savedAddress;
 
-function isAddress(e) {
+function theAddress(e) {
     var text = e.target.value;
     if (text.indexOf(' ') >= 3 && text.lastIndexOf(' ') <= text.length - 3 && text.toUpperCase() != text.toLowerCase() && hasInteger(text) && text.length >= 5) {
         savedAddress = text;
@@ -194,10 +194,10 @@ function isAddress(e) {
 }
 
 var city = document.getElementById('city');
-city.addEventListener('keyup', isCity);
+city.addEventListener('keyup', theCity);
 var savedCity;
 
-function isCity(e) {
+function theCity(e) {
     var text = e.target.value;
     if (text = text.toLowerCase() && text.length > 3) {
         savedCity = text;
@@ -224,10 +224,10 @@ function isCity(e) {
 }
 
 var zipCode = document.getElementById('zip-code');
-zipCode.addEventListener('keyup', isZipCode);
+zipCode.addEventListener('keyup', theZipCode);
 var savedZipCode;
 
-function isZipCode(e) {
+function theZipCode(e) {
     var text = e.target.value;
     if (text.indexOf(' ') == -1 && text.toUpperCase() == text.toLowerCase() && text.length >= 4 && text.length <= 5) {
         savedZipCode = text;
@@ -265,10 +265,10 @@ function haveNumber(string) {
     }
 }
 var password = document.getElementById('password');
-password.addEventListener('keyup', isPassword);
+password.addEventListener('keyup', thePassword);
 var savedPassword;
 
-function isPassword(e) {
+function thePassword(e) {
     var textPassword = e.target.value;
     if (textPassword.indexOf(' ') == -1 && textPassword.toUpperCase() != textPassword.toLowerCase() && haveNumber(textPassword) && textPassword.length >= 8) {
         savedPassword = textPassword;
@@ -295,9 +295,9 @@ function isPassword(e) {
 }
 
 var repeatPassword = document.getElementById('repeat-password');
-repeatPassword.addEventListener('keyup', isTheSamePassword);
+repeatPassword.addEventListener('keyup', theSamePassword);
 
-function isTheSamePassword(e) {
+function theSamePassword(e) {
     var textRepeatPassword = e.target.value;
     if (savedPassword == textRepeatPassword) {
         repeatPassword.onblur = function () {
