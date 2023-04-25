@@ -123,7 +123,7 @@ function isDNI(e) {
             dni.classList.add('not-valid');
             errorAlert = document.createElement('span');
             errorAlert.className = 'alert';
-            var textAlert = document.createTextNode('The ID number must have 7 numbers');
+            var textAlert = document.createTextNode('The DNI number must have 7 numbers');
             errorAlert.appendChild(textAlert);
             dni.insertAdjacentElement('afterend', errorAlert);
         }
