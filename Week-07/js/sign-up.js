@@ -1,3 +1,4 @@
+window.onload = function(){
 var firstName = document.getElementById('name');
 firstName.addEventListener('keyup', theName);
 var lastName = document.getElementById('last-name');
@@ -349,6 +350,7 @@ function validateSubmit() {
         alert('There are some inputs with incorrect information.');
     } else {
         saveLocalStorage()
+        alert("Succes: " + '\nWelcome to the Radium Rocket Gym ' + firstName.value);
         var url = 'https://api-rest-server.vercel.app/signup?name=' + firstName.value + '&lastName=' + lastName.value + '&dni=' +
             dni.value + '&dob=' + date.value + '&phone=' + phone.value + '&address=' + address.value + '&city=' + city.value + '&zip=' + zipCode.value +
             '&email=' + email.value + '&password=' + password.value;
@@ -363,10 +365,7 @@ function validateSubmit() {
                 alert("Succes: " + data.msg + '\nWelcome to the Radium Rocket Gym ' + firstName.value);
                 } else {
                 var errorMsg = "";
-                data.errors.forEach(function (error) {
-                    errorMsg += error.msg + "\n";
-                });
-                alert("Errors:\n" + errorMsg);
+                alert("Error:\n" + errorMsg);
                 }
             })
             .catch(function () {
@@ -374,5 +373,5 @@ function validateSubmit() {
             });
     }
 }
-
+}
 
