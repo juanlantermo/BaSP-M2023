@@ -32,3 +32,9 @@ https://juanlantermo.github.io/BaSP-M2023/Week-05/index.html
 
 We develop the design of the sign up and login pages.
 At the same time we gave it functionality generating the validations for the data that will be uploaded by the user
+https://juanlantermo.github.io/BaSP-M2023/Week-06/views/index.html
+
+# Megarocket web- week 7
+This week after validating the data of the entered fields, we connected them with the local storage to be able to reuse them in a reload and also in the login screen
+
+https://juanlantermo.github.io/BaSP-M2023/Week-07/views/index.html
